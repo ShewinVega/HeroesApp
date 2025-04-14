@@ -1,26 +1,33 @@
 import { useNavigate } from 'react-router';
+import { useAuthContext } from '../../context/Auth';
 
 export const LoginPage = () => {
 
-    const navigate = useNavigate();
+  const { login } = useAuthContext();
 
-    const onLogin = () => {
-        navigate('/marvel', {
-            replace: true,
-        });
-    }
+  const navigate = useNavigate();
 
-    return (
-        <div className="container mt-5">
-            <h1>Login</h1>
-            <hr />
+  const onLogin = () => {
+    login(' Edwin Vega '); // username that we are going to save in localstorage
 
-            <button
-                className="btn btn-primary"
-                onClick={onLogin}
-            >
-                Login
-            </button>
-        </div>
-    )
+    // Verify if it was lastPath
+    const lastPath = localStorage.getItem('lastPath') || '/marvel';
+    navigate(`${lastPath}`, {
+      replace: true,
+    });
+  }
+
+  return (
+    <div className="container mt-5">
+      <h1>Login</h1>
+      <hr />
+
+      <button
+        className="btn btn-primary"
+        onClick={onLogin}
+      >
+        Login
+      </button>
+    </div>
+  );
 }
