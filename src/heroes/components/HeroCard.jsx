@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router';
 import PropTypes from 'prop-types';
 
@@ -12,12 +13,11 @@ const CharactersByHero = ({ characters, alter_ego }) => {
 
 }
 
- 
+
 export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance, characters }) => {
 
 
   const heroImageUrl = `/assets/heroes/${id}.jpg`;
-  // console.log(publisher);	
 
   return (
     <div className="col animate__animated animate__fadeIn">
@@ -33,7 +33,7 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
               <p className="card-text">
                   { alter_ego }
               </p>
-              
+
               <CharactersByHero
                 characters={ characters }
                 alter_ego={ alter_ego }

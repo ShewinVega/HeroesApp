@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useMemo } from 'react';
 
@@ -10,9 +11,9 @@ export const HeroList = ({ publisher  }) => {
 
   return (
     <div className="row rows-cols-1 row-cols-md-3 g-3">
-      { 
+      {
         heroes.map(hero => (
-          <HeroCard 
+          <HeroCard
             key={hero.id}
             {...hero}
           />

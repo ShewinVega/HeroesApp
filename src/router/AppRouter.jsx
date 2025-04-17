@@ -1,5 +1,5 @@
+import React from 'react';
 import {Routes, Route} from 'react-router';
-
 import { DcPage, HeroPage, MarvelPage, SearchPage } from '../heroes';
 import { LoginPage } from '../auth';
 import { PrivateRoute } from './PrivateRoute.jsx';

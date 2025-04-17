@@ -1,3 +1,4 @@
+import React from 'react';
 import { HeroList } from '../components/HeroList';
 import constants from '../../constants';
 
