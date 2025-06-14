@@ -22,14 +22,11 @@ export const SearchPage = () => {
 
   const onSearchSubmit = (event) => {
     event.preventDefault();
-    // if(searchText.trim().length <= 1) return;
+    if(searchText.trim().length <= 1) return;
     navigate(`?q=${searchText.toLowerCase().trim()}`);
   }
   return (
     <>
-      <h1>Search</h1>
-      <hr />
-
       <div className="row">
         <div className="col-5">
           <h4>Searching</h4>

@@ -44,8 +44,8 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex flex-column justify-content-start flex-md-row justify-content-md-end">
-                <ul className="navbar-nav ml-auto">
+            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex flex-column align-items-start flex-md-row justify-content-md-end">
+                <ul className="navbar-nav ml-auto d-flex flex-row gap-3">
                     <span className="nav-item nav-link text-primary">
                       { user?.name ?? '' }
                     </span>
