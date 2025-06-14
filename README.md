@@ -1,6 +1,7 @@
 # 🦸‍♂️ heroesApp
 
-Aplicación web construida con **React** que permite explorar héroes del universo de **Marvel** y **DC**. Incluye funcionalidades de búsqueda, detalle por héroe y control de rutas públicas y privadas mediante un sistema básico de autenticación.
+Aplicación web construida con **React** que permite explorar héroes del universo de **Marvel** y **DC**. Incluye funcionalidades de búsqueda, detalle por héroe y control de rutas públicas y privadas mediante un sistema básico de autenticación. HeroesApp muestra de manera simple como se trabaja con contextos en react, con esto se pretende crear un referencia del uso del context a los nuevos desarrolladores que estan
+iniciando en Frontend con ReactJS.
 
 ## 🚀 Tecnologías utilizadas
 

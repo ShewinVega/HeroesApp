@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router';
+import { MdLogout } from "react-icons/md";
 import { useAuthContext } from '../../context/Auth';
 
 export const Navbar = () => {
@@ -16,7 +17,7 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2 mb-2">
             <div className="navbar-collapse">
                 <div className="navbar-nav">
 
@@ -43,7 +44,7 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
+            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex flex-column justify-content-start flex-md-row justify-content-md-end">
                 <ul className="navbar-nav ml-auto">
                     <span className="nav-item nav-link text-primary">
                       { user?.name ?? '' }
@@ -52,7 +53,7 @@ export const Navbar = () => {
                         className="nav-item nav-link btn"
                         onClick={onLogout}
                     >
-                        Logout
+                      <MdLogout size={20} color='red' />
                     </button>
                 </ul>
             </div>
